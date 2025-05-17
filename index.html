@@ -6,7 +6,7 @@
     <title>Voter Registration</title>
     <link rel="stylesheet" type="text/css" href="./index.css">
     <style>
-        /* Basic CSS for layout - you'll likely want to expand this */
+        
         body {
             font-family: sans-serif;
             margin: 20px;
@@ -88,12 +88,12 @@
     </form>
 
     <script>
-        // Basic JavaScript to handle form submission and display a message
+    
         const registrationForm = document.getElementById('registrationForm');
         const registrationMessage = document.getElementById('registrationMessage');
 
         registrationForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault(); 
 
             const formData = new FormData(registrationForm);
             const data = {};
@@ -101,12 +101,11 @@
                 data[key] = value;
             });
 
-            // In a real application, you would send this data to your backend
             console.log('Registration Data:', data);
 
-            // For this frontend example, just display a success message
+
             registrationMessage.textContent = 'Registration submitted successfully!';
-            registrationForm.reset(); // Clear the form
+            registrationForm.reset(); 
         });
     </script>
 <script src="./index.js"></script>
